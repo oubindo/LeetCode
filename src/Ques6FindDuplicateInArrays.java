@@ -11,7 +11,7 @@ public class Ques6FindDuplicateInArrays {
         List<Integer> result = new ArrayList<>();
         if(nums == null || nums.length == 0) return result;
         for(int i = 0; i < nums.length; i++){
-            int index = Math.abs(i) - 1;
+            int index = Math.abs(nums[i]) - 1;
             if(nums[index] < 0)
                 result.add(Math.abs(index + 1));
             nums[index] = -nums[index];
