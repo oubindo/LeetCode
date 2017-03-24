@@ -23,6 +23,7 @@ public class Ques10JumpGame {
         return true;
     }
 
+
     public static boolean canJumpGreedy(int[] A) {
         int n = A.length;
         int last = n - 1, i, j;
@@ -31,4 +32,18 @@ public class Ques10JumpGame {
         }
         return last <= 0;
     }
+
+    public static void main(String[] args) {
+        int[] e1 = new int[]{2,3,1,1,4};
+        int[] e2 = new int[]{3,2,1,0,4};
+        int[] e3 = new int[]{2,0,0,0};
+        System.out.println(canJump(e1));
+        System.out.println(canJump(e2));
+        System.out.println(canJump(e3));
+        System.out.println(canJumpGreedy(e1));
+        System.out.println(canJumpGreedy(e2));
+        System.out.println(canJumpGreedy(e3));
+    }
+
+
 }
